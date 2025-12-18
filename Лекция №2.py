@@ -107,10 +107,10 @@
 # Преобразует str_number в целое число (int) и складывает его с int_number.
 # Результат сложения преобразует в строку (str) и сохраняет в новую переменную result_str.
 # Выводит на экран значение переменной result_str и её тип данных (используй type()), каждое с новой строки.
-str_number = "50"
-int_number = 25
-new_number = int (str_number)
-sum_result = new_number + int_number
-result_str = str (sum_result)
-print (result_str)
-print (type (result_str))
+    # str_number = "50"
+    # int_number = 25
+    # new_number = int (str_number)
+    # sum_result = new_number + int_number
+    # result_str = str (sum_result)
+    # print (result_str)
+    # print (type (result_str))
