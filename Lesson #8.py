@@ -38,9 +38,9 @@
 # Записывает в этот файл все строки из списка lines, каждая с новой строки.
 # Используй контекстный менеджер with и кодировку utf-8.
 # Подсказка: для записи нескольких строк удобно использовать метод .writelines(), но не забудь добавить символы переноса строк.
-lines = ["Первая строка", "Вторая строка", "Третья строка"]
-with open("output.txt", "w", encoding='utf-8') as output_file:
-    output_file.writelines(line + "\n" for line in lines)
+    # lines = ["Первая строка", "Вторая строка", "Третья строка"]
+    # with open("output.txt", "w", encoding='utf-8') as output_file:
+    #     output_file.writelines(line + "\n" for line in lines)
 
 # Задача №5 (Тема: Файлы)
 # Напиши код, который:
@@ -48,3 +48,5 @@ with open("output.txt", "w", encoding='utf-8') as output_file:
 # Добавляет в конец файла новую строку: "Запись добавлена через Python."
 # Убедись, что предыдущее содержимое файла сохраняется.
 # Используй контекстный менеджер with.
+    # with open("diary.txt", "a", encoding='utf-8') as diary_file:
+    #     diary_file.write("Запись добавлена через Python.")
