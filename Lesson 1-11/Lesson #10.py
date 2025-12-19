@@ -42,4 +42,62 @@
 # Вызови метод deposit() с суммой 500.
 # Выведи информацию о счёте, вызвав метод display_info().
 # Вывод должен быть в одну строку.
-
+    # class BankAccount:
+    #     def __init__(self, owner, balance=0):
+    #         self.account_owner = owner
+    #         self.balance = balance
+    #     def deposit(self, amount):
+    #         self.balance += amount
+    #     def display_info(self):
+    #         return (f'Владелец: {self.account_owner}, Баланс:{self.balance}')
+    # customer1=BankAccount("Иван",1000)
+    # customer1.deposit(500)
+    # customer1.display_info()
+    # print(customer1.display_info())
+#
+# Задача №4 (Тема: ООП часть 1. Раздел: Понимание параметра self)
+# Создай класс Car с конструктором __init__, который принимает два параметра:
+# brand (марка автомобиля, строка)
+# year (год выпуска, целое число)
+# Добавь в класс метод get_age(current_year), который:
+# Принимает текущий год как параметр
+# Используя параметр self, обращается к атрибуту year объекта
+# Возвращает разницу между текущим годом и годом выпуска автомобиля (возраст автомобиля в годах)
+# Создай объект этого класса с параметрами: brand="Toyota", year=2018.
+# Затем вызови метод get_age(2025) и выведи результат на экран.
+# Примечание: метод должен использовать self.year для доступа к атрибуту объекта.
+    # class Car:
+    #     def __init__(self, brand, year):
+    #         self.brand = brand
+    #         self.year = year
+    #     def get_age(self, current_year):
+    #         return current_year - self.year
+    # car1 = Car(brand="Toyota", year=2018)
+    # age = car1.get_age(2025)
+    # print (age)
+#
+# Задача №5 (Тема: ООП часть 1. Раздел: Общие атрибуты)
+# Создай класс Employee (Сотрудник).
+# У класса должно быть два вида атрибутов:
+# Атрибут класса (общий для всех объектов) с именем company, которому присвоено значение "TechCorp".
+# Атрибуты объектов в конструкторе __init__:
+# name (имя сотрудника, принимается как параметр)
+# position (должность, принимается как параметр)
+# Создай два объекта этого класса:
+# emp1 с параметрами: name="Анна", position="Разработчик"
+# emp2 с параметрами: name="Максим", position="Аналитик"
+# Выведи на экран для каждого объекта:
+# Имя сотрудника и его должность
+# Название компании (обращаясь к атрибуту класса)
+# Формат вывода для каждого объекта:
+# "Сотрудник: {имя}, Должность: {должность}, Компания: {компания}"
+# Примечание: атрибут класса определяется на уровне класса (не внутри __init__).
+    # class Employee:
+    #     company="TechCorp"
+    #     def __init__(self, name, position):
+    #         self.name = name
+    #         self.position = position
+    # emp1 = Employee(name="Анна", position="Разработчик")
+    # emp2 = Employee(name="Максим", position="Аналитик")
+    # print(f'Сотрудник:{emp1.name} , Должность: {emp1.position}, Компания: {Employee.company}')
+    # print(f'Сотрудник:{emp2.name} , Должность: {emp2.position}, Компания: {Employee.company}')
